@@ -1,4 +1,5 @@
-# mt-app
+# mt-app 美团网站，vue + ssr + nuxt + koa2
+
 <<<<<<< HEAD
 
 > My extraordinary Nuxt.js project
@@ -20,7 +21,3 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-=======
-美团网站，使用vue+ssr+nuxt.js+koa2开发
->>>>>>> 86c08d89fe54923b8ffd5a99b421506afe7c069a
