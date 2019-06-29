@@ -4,6 +4,7 @@
 
 > vscode 下按Ctrl+k，接着按v键打开vscode实时预览MarkDown文本
 
+>[MarkDown简书教程](https://www.jianshu.com/p/2cfd1e8031d3)
 
 ## 安装模块使用教程
 
