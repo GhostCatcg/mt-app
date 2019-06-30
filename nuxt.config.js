@@ -37,6 +37,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    'axios'
   ],
   /*
   ** Build configuration
@@ -48,14 +49,14 @@ module.exports = {
     */
     extend(config, ctx) {
       // Run ESlint on save
-      // if (ctx.isDev && ctx.isClient){
-      //   config.module.rules.push({
-      //     enforce:'pre',
-      //     test:/\.(js|vue)/,
-      //     loader: 'eslint-loader',
-      //     exclude:/(node_modules)/
-      //   })
-      // }
+      if (ctx.isDev && ctx.isClient){
+        config.module.rules.push({
+          enforce:'pre',
+          test:/\.(js|vue)/,
+          loader: 'eslint-loader',
+          exclude:/(node_modules)/
+        })
+      }
     },
     // github.com/nuxt/nuxt.js/issues/3804
     cache:false

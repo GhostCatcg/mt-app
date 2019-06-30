@@ -19,18 +19,19 @@ export default {
         },
         get pass() {
             return '授权码'
+        },
+        get code() {
+            return () => {
+                // 随机的验证码
+                return Math.rendom().toString(16).slice(2, 6).toUpperCase()
+            }
+        },
+        get expire() {
+            // 过期时间
+            return () => {
+                return new Date().getTime() + 60 * 60 * 1000
+            }
         }
     },
-    get code() {
-        return () => {
-            // 随机的验证码
-            return Math.rendom().toString(16).slice(2, 6).toUpperCase()
-        }
-    },
-    get expire() {
-        // 过期时间
-        return () => {
-            return new Date().getTime() + 60 * 60 * 1000
-        }
-    }
+    
 }
