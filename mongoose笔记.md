@@ -8,11 +8,18 @@
 
 [MongooseJS中文文档](https://xiaoxiami.gitbook.io/mongoose/guide)
 
+[配置MongoDB](https://blog.csdn.net/qq_20412595/article/details/80610724)
+
 ``` bash
 
 # 查看 mongodb 安装的位置
 $ which mongod
 
+# 
+mongod --dbpath E:\DB\data\db
+
+# 把mongod配置成服务
+mongod --config "E:\DB\data\mongo.config" --install --serviceName "MongoDB"
 # 启动 mongodb
 $ mongod
 
