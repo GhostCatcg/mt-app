@@ -18,7 +18,7 @@ export default {
             return '1169518718@qq.com'
         },
         get pass() {
-            return '授权码'
+            return ''
         },
         get code() {
             return () => {

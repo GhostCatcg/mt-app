@@ -21,7 +21,7 @@ module.exports = {
     host: '0.0.0.0', // default: localhost
   },
   /*
-  
+
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
@@ -43,7 +43,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // 'axios'
+    'axios'
   ],
   /*
   ** Build configuration

@@ -113,6 +113,7 @@ export default {
   layout: "blank",
   methods: {
     sendMsg: function() {
+      console.log("开始发生验证码")
       const self = this;
       let namePass
       let emailPass
