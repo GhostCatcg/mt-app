@@ -17,7 +17,7 @@ module.exports = {
   },
   
   server: {
-    port: 5000, // default: 3000
+    port: 1000, // default: 3000
     host: '0.0.0.0', // default: localhost
   },
   /*
@@ -43,11 +43,9 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/bulma'
-  ],
-  axios: [
-
+    // 'axios',
+    '@nuxtjs/axios' // 这是一个模块，需要安装！！！ 妈的卡了我一周
+    // '@nuxtjs/bulma'
   ],
   /*
   ** Build configuration

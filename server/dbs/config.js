@@ -1,6 +1,7 @@
 // 数据库配置文件
 
 export default {
+    // dbs: 'mongodb://127.0.0.1:27017',
     dbs: 'mongodb://127.0.0.1:27017/student',
     redis: {
         get host() {
@@ -22,12 +23,12 @@ export default {
         },
         get code() {
             return () => {
-                // 随机的验证码
+                // 随机的验证码 给邮箱发验证码
                 return Math.rendom().toString(16).slice(2, 6).toUpperCase()
             }
         },
         get expire() {
-            // 过期时间
+            // 过期时间 一分钟
             return () => {
                 return new Date().getTime() + 60 * 60 * 1000
             }
