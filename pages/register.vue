@@ -139,6 +139,7 @@ export default {
       if (!namePass && !emailPass) {
         // 用户名和邮箱都通过
         // nuxt.config - modules 已经引入axios
+        
         self.$axios.post('/users/verify', {
           // encode 对中文进行编码
           username: window.encodeURIComponent(self.ruleForm.name),

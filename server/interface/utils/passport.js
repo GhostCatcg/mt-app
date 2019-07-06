@@ -1,4 +1,4 @@
-import passport from 'koa-passport'
+import passport from 'koa-passport'  // passport 
 import LocalStrategy from 'passport-local'
 import UserModel from '../../dbs/models/users'
 // 注册8-3
@@ -18,10 +18,11 @@ passport.use(new LocalStrategy(async function (username, password, done) {
 	}
 }))
 
+// 通过session验证
 passport.serializeUser(function (user, done) {
 	done(null, user)
 })
-
+// 序列化
 passport.deserializeUser(function (user, done) {
 	return done(null, user)
 })
